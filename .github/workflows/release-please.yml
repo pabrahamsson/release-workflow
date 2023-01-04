@@ -3,6 +3,7 @@ on:
     branches:
       - main
 
+
 name: release-please
 jobs:
   release-please:
@@ -14,6 +15,7 @@ jobs:
           release-type: rust
           package-name: release-workflow
             #command: github-release
+          token: ${{ secrets.PAT }}
 #      - uses: actions/checkout@v3
 #      - name: tag major and minor versions
 #        if: ${{ steps.release.outputs.release_created }}
