@@ -1,14 +1,10 @@
 on:
-  push:
-    tags:
-      - 'v*'
-      - 'v0.*'
-  release:
-    types: [published, released]
+  create:
 
 name: trigger
 jobs:
   metadata:
+    if: ${{ startsWith(github.ref, 'refs/tags/v') }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
