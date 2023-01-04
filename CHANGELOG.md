@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.12](https://github.com/pabrahamsson/release-workflow/compare/v0.2.11...v0.2.12) (2023-01-04)
+
+
+### Bug Fixes
+
+* Run meta extract in release ([d134343](https://github.com/pabrahamsson/release-workflow/commit/d134343a364553eb66482aae307af5057b677b34))
+
 ## [0.2.11](https://github.com/pabrahamsson/release-workflow/compare/v0.2.10...v0.2.11) (2023-01-04)
 
 
