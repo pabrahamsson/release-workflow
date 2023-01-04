@@ -1,5 +1,14 @@
 # Changelog
 
+## [0.2.9](https://github.com/pabrahamsson/release-workflow/compare/v0.2.8...v0.2.9) (2023-01-04)
+
+
+### Bug Fixes
+
+* add id ([842a3da](https://github.com/pabrahamsson/release-workflow/commit/842a3dac38719eb6fece21767c3e8bd033780c8c))
+* don't use github-release ([8c90c14](https://github.com/pabrahamsson/release-workflow/commit/8c90c14bc3a96df9b3020cf88764fe50b7d992a9))
+* trix with release please ([718666c](https://github.com/pabrahamsson/release-workflow/commit/718666ca2652ef3ba95cbbae365fe0ca6c1137fc))
+
 ## [0.2.8](https://github.com/pabrahamsson/release-workflow/compare/v0.2.7...v0.2.8) (2023-01-04)
 
 
