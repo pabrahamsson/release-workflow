@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.1](https://github.com/pabrahamsson/release-workflow/compare/v0.2.0...v0.2.1) (2023-01-04)
+
+
+### Bug Fixes
+
+* add push to main to trigger ([70c2642](https://github.com/pabrahamsson/release-workflow/commit/70c26427ec9f5068242e151d55a415ded762606b))
+
 ## [0.2.0](https://github.com/pabrahamsson/release-workflow/compare/v0.1.0...v0.2.0) (2023-01-04)
 
 
