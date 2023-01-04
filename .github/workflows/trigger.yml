@@ -1,5 +1,5 @@
 on:
-  create:
+  create
 
 name: trigger
 jobs:
