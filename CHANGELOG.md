@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.0](https://github.com/pabrahamsson/release-workflow/compare/v0.1.0...v0.2.0) (2023-01-04)
+
+
+### Features
+
+* add workflow_dispatch to trigger ([860e94d](https://github.com/pabrahamsson/release-workflow/commit/860e94d780b5d1b2ae860db2a710ee28c307c09a))
+
 ## 0.1.0 (2023-01-04)
 
 
