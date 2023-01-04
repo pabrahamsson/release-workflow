@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.7](https://github.com/pabrahamsson/release-workflow/compare/v0.2.6...v0.2.7) (2023-01-04)
+
+
+### Bug Fixes
+
+* tinker with trigger triggers ([a03cf3c](https://github.com/pabrahamsson/release-workflow/commit/a03cf3cf4ed0c294e39b6bd6528ced40324ea098))
+
 ## [0.2.6](https://github.com/pabrahamsson/release-workflow/compare/v0.2.5...v0.2.6) (2023-01-04)
 
 
