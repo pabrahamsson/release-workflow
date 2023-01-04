@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.13](https://github.com/pabrahamsson/release-workflow/compare/v0.2.12...v0.2.13) (2023-01-04)
+
+
+### Bug Fixes
+
+* See if we can trigger publish on release ([8d37e73](https://github.com/pabrahamsson/release-workflow/commit/8d37e73cf9eaf8c18e138af2f03ac22d8c9259d9))
+
 ## [0.2.12](https://github.com/pabrahamsson/release-workflow/compare/v0.2.11...v0.2.12) (2023-01-04)
 
 
