@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.10](https://github.com/pabrahamsson/release-workflow/compare/v0.2.9...v0.2.10) (2023-01-04)
+
+
+### Bug Fixes
+
+* Use conditional for trigger ([e490a2f](https://github.com/pabrahamsson/release-workflow/commit/e490a2f3f50764baa925ec53a9b6c961c449679b))
+
 ## [0.2.9](https://github.com/pabrahamsson/release-workflow/compare/v0.2.8...v0.2.9) (2023-01-04)
 
 
