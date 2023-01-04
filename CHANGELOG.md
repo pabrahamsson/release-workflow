@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.6](https://github.com/pabrahamsson/release-workflow/compare/v0.2.5...v0.2.6) (2023-01-04)
+
+
+### Bug Fixes
+
+* remove workflow_dispatch ([2eac908](https://github.com/pabrahamsson/release-workflow/commit/2eac908cf01802b742867d15f0f08849f41efc56))
+
 ## [0.2.5](https://github.com/pabrahamsson/release-workflow/compare/v0.2.4...v0.2.5) (2023-01-04)
 
 
