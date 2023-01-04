@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.14](https://github.com/pabrahamsson/release-workflow/compare/v0.2.13...v0.2.14) (2023-01-04)
+
+
+### Bug Fixes
+
+* Use a PAT ([2b632ac](https://github.com/pabrahamsson/release-workflow/commit/2b632ace09efab23edf6ebee3a013d0affe9c66b))
+
 ## [0.2.13](https://github.com/pabrahamsson/release-workflow/compare/v0.2.12...v0.2.13) (2023-01-04)
 
 
