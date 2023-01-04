@@ -1,14 +1,14 @@
 on:
   workflow_dispatch:
   push:
-    release:
-      types:
-        - published
-        - created
     tags:
       - '**'
       - '.*'
       - 'v**'
+  release:
+    types:
+      - published
+      - created
 
 name: trigger
 jobs:
