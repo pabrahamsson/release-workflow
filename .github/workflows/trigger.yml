@@ -1,13 +1,10 @@
 on:
   push:
     tags:
-      - '**'
-      - '.*'
-      - 'v**'
+      - 'v*'
+      - 'v0.*'
   release:
-    types:
-      - published
-      - created
+    types: [published,released]
 
 name: trigger
 jobs:
