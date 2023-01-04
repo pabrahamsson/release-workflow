@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.4](https://github.com/pabrahamsson/release-workflow/compare/v0.2.3...v0.2.4) (2023-01-04)
+
+
+### Bug Fixes
+
+* support all tags for trigger workflow ([e10cbbe](https://github.com/pabrahamsson/release-workflow/commit/e10cbbe44eced31f5befa7fcd5d00a908908ed3e))
+
 ## [0.2.3](https://github.com/pabrahamsson/release-workflow/compare/v0.2.2...v0.2.3) (2023-01-04)
 
 
