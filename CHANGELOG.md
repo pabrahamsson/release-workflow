@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.2](https://github.com/pabrahamsson/release-workflow/compare/v0.2.1...v0.2.2) (2023-01-04)
+
+
+### Bug Fixes
+
+* trigger on published release ([5fae689](https://github.com/pabrahamsson/release-workflow/commit/5fae689ecaae6d6afe7c3ebcdf30f6cb31fc42b7))
+
 ## [0.2.1](https://github.com/pabrahamsson/release-workflow/compare/v0.2.0...v0.2.1) (2023-01-04)
 
 
