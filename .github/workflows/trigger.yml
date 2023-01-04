@@ -1,10 +1,11 @@
-on:
-  create
+name: Publish Container Image
 
-name: trigger
+on:
+  release:
+    types: [published]
+
 jobs:
   metadata:
-    if: ${{ startsWith(github.ref, 'refs/tags/v') }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout

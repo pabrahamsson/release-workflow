@@ -14,31 +14,31 @@ jobs:
           release-type: rust
           package-name: release-workflow
             #command: github-release
-      - uses: actions/checkout@v3
-      - name: tag major and minor versions
-        if: ${{ steps.release.outputs.release_created }}
-        run: |
-          git config user.name github-actions[bot]
-          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
-          git remote add gh-token "https://${{ secrets.GITHUB_TOKEN }}@github.com/pabrahamsson/release-workflow.git"
-          git tag -d v${{ steps.release.outputs.major }} || true
-          git tag -d v${{ steps.release.outputs.major }}.${{ steps.release.outputs.minor }} || true
-          git push origin :v${{ steps.release.outputs.major }} || true
-          git push origin :v${{ steps.release.outputs.major }}.${{ steps.release.outputs.minor }} || true
-          git tag -a v${{ steps.release.outputs.major }} -m "Release v${{ steps.release.outputs.major }}"
-          git tag -a v${{ steps.release.outputs.major }}.${{ steps.release.outputs.minor }} -m "Release v${{ steps.release.outputs.major }}.${{ steps.release.outputs.minor }}"
-          git push origin v${{ steps.release.outputs.major }}
-          git push origin v${{ steps.release.outputs.major }}.${{ steps.release.outputs.minor }}
-      - name: Checkout repository
-        if: ${{ steps.release.outputs.release_created }}
-        uses: actions/checkout@v3
-      - name: Extract Docker metadata
-        if: ${{ steps.release.outputs.release_created }}
-        uses: docker/metadata-action@v4
-        with:
-          images: pabrahamsson/release-workflow
-          tags: |
-            type=ref,event=branch
-            type=ref,event=pr
-            type=semver,pattern={{version}}
-            type=semver,pattern={{major}}.{{minor}}
+#      - uses: actions/checkout@v3
+#      - name: tag major and minor versions
+#        if: ${{ steps.release.outputs.release_created }}
+#        run: |
+#          git config user.name github-actions[bot]
+#          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+#          git remote add gh-token "https://${{ secrets.GITHUB_TOKEN }}@github.com/pabrahamsson/release-workflow.git"
+#          git tag -d v${{ steps.release.outputs.major }} || true
+#          git tag -d v${{ steps.release.outputs.major }}.${{ steps.release.outputs.minor }} || true
+#          git push origin :v${{ steps.release.outputs.major }} || true
+#          git push origin :v${{ steps.release.outputs.major }}.${{ steps.release.outputs.minor }} || true
+#          git tag -a v${{ steps.release.outputs.major }} -m "Release v${{ steps.release.outputs.major }}"
+#          git tag -a v${{ steps.release.outputs.major }}.${{ steps.release.outputs.minor }} -m "Release v${{ steps.release.outputs.major }}.${{ steps.release.outputs.minor }}"
+#          git push origin v${{ steps.release.outputs.major }}
+#          git push origin v${{ steps.release.outputs.major }}.${{ steps.release.outputs.minor }}
+#      - name: Checkout repository
+#        if: ${{ steps.release.outputs.release_created }}
+#        uses: actions/checkout@v3
+#      - name: Extract Docker metadata
+#        if: ${{ steps.release.outputs.release_created }}
+#        uses: docker/metadata-action@v4
+#        with:
+#          images: pabrahamsson/release-workflow
+#          tags: |
+#            type=ref,event=branch
+#            type=ref,event=pr
+#            type=semver,pattern={{version}}
+#            type=semver,pattern={{major}}.{{minor}}
