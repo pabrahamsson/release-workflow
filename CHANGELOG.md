@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.11](https://github.com/pabrahamsson/release-workflow/compare/v0.2.10...v0.2.11) (2023-01-04)
+
+
+### Bug Fixes
+
+* syntax issue? ([fa95a36](https://github.com/pabrahamsson/release-workflow/commit/fa95a364f156379bffb3a92085990c1232d1bdb5))
+
 ## [0.2.10](https://github.com/pabrahamsson/release-workflow/compare/v0.2.9...v0.2.10) (2023-01-04)
 
 
