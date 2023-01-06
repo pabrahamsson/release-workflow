@@ -9,7 +9,8 @@ jobs:
   release-please:
     runs-on: ubuntu-latest
     outputs:
-      tags: "${{ steps.release.outputs.major }}.${{ steps.release.outputs.minor }}.${{ steps.release.outputs.patch }}"
+      release_created: ${{ steps.release.outputs.release_created }}
+      tags: "${{ steps.release.outputs.major }}.${{steps.release.outputs.minor }}.${{ stps.release.outputs.patch }}"
     steps:
       - uses: google-github-actions/release-please-action@v3
         id: release
@@ -26,7 +27,7 @@ jobs:
   publish-latest:
     name: Publish latest container image
     runs-on: ubuntu-latest
-    needs: [release-please]
+    needs: release-please
     steps:
       - run: |
           echo "Would call docker-publish with no args"
@@ -34,8 +35,8 @@ jobs:
   publish-release:
     name: Publish versioned container image
     runs-on: ubuntu-latest
-    needs: [release-please]
-    if: ${{ needs.release-please.steps.release.outputs.release_created }}
+    needs: release-please
+    if: ${{ needs.release-please.outputs.release_created }}
     steps:
       - run: |
           echo "Would call docker pubish with ${{ needs.release-please.outputs.tags }}"
