@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.2.17](https://github.com/pabrahamsson/release-workflow/compare/v0.2.16...v0.2.17) (2023-01-06)
+
+
+### Bug Fixes
+
+* Job passing outputs ([b1c1c2a](https://github.com/pabrahamsson/release-workflow/commit/b1c1c2a0fc7e126bacc043e37b6c001c2fd1207e))
+* typo ([8eb0e4e](https://github.com/pabrahamsson/release-workflow/commit/8eb0e4e5948aab70be7663c3273c15e69776495c))
+
 ## [0.2.16](https://github.com/pabrahamsson/release-workflow/compare/v0.2.15...v0.2.16) (2023-01-06)
 
 
