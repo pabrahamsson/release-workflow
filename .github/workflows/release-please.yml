@@ -17,6 +17,7 @@ jobs:
           #token: ${{ secrets.PAT }}
       - name: Output vars
         run: |
+          git config user.name ${{ steps.release.outputs.sha }}
           echo "sha: ${{ steps.release.outputs.sha }}"
           echo "release_created: ${{ steps.release.outputs.release_created }}"
           echo "releases_created: ${{ steps.release.outputs.releases_created }}"
