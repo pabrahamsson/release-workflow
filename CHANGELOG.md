@@ -1,5 +1,14 @@
 # Changelog
 
+## [0.2.16](https://github.com/pabrahamsson/release-workflow/compare/v0.2.15...v0.2.16) (2023-01-06)
+
+
+### Bug Fixes
+
+* add missing double quote ([6c9ae54](https://github.com/pabrahamsson/release-workflow/commit/6c9ae54029b6cb339fbaa78c6507a518bcbaff43))
+* add missing property 'runs-on' ([9d990aa](https://github.com/pabrahamsson/release-workflow/commit/9d990aa5a49e76245bd244d4c00e6bd7a63e0975))
+* More testing ([2b191f2](https://github.com/pabrahamsson/release-workflow/commit/2b191f251dc03cce6a2344a82c30fd1f6ad5cc53))
+
 ## [0.2.15](https://github.com/pabrahamsson/release-workflow/compare/v0.2.14...v0.2.15) (2023-01-06)
 
 
