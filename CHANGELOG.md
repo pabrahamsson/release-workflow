@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.15](https://github.com/pabrahamsson/release-workflow/compare/v0.2.14...v0.2.15) (2023-01-06)
+
+
+### Bug Fixes
+
+* Create debug PR ([ac9699c](https://github.com/pabrahamsson/release-workflow/commit/ac9699c13a7037e78a9b29019a79dd63bc51f1d9))
+
 ## [0.2.14](https://github.com/pabrahamsson/release-workflow/compare/v0.2.13...v0.2.14) (2023-01-04)
 
 
