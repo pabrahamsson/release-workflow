@@ -8,6 +8,8 @@ name: release-please
 jobs:
   release-please:
     runs-on: ubuntu-latest
+    outputs:
+      tags: "${{ steps.release.outputs.major }}.${{ steps.release.outputs.minor }}.${{ steps.release.outputs.patch }}"
     steps:
       - uses: google-github-actions/release-please-action@v3
         id: release
@@ -20,6 +22,22 @@ jobs:
           echo "sha: ${{ steps.release.outputs.sha }}"
           echo "release_created: ${{ steps.release.outputs.release_created }}"
           echo "releases_created: ${{ steps.release.outputs.releases_created }}"
+  
+  publish-latest:
+    name: Publish latest container image
+    needs: [release-please]
+    steps:
+      - run: |
+          echo "Would call docker-publish with no args
+
+  publish-release:
+    name: Publish versioned container image
+    needs: [release-please]
+    if: ${{ needs.release-please.steps.release.outputs.release_created }}
+    steps:
+      - run: |
+          echo "Would call docker pubish with ${{ needs.release-please.outputs.tags }}"
+
 #      - uses: actions/checkout@v3
 #      - name: tag major and minor versions
 #        if: ${{ steps.release.outputs.release_created }}
