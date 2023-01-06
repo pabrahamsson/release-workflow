@@ -25,6 +25,7 @@ jobs:
   
   publish-latest:
     name: Publish latest container image
+    runs-on: ubuntu-latest
     needs: [release-please]
     steps:
       - run: |
@@ -32,6 +33,7 @@ jobs:
 
   publish-release:
     name: Publish versioned container image
+    runs-on: ubuntu-latest
     needs: [release-please]
     if: ${{ needs.release-please.steps.release.outputs.release_created }}
     steps:
