@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     outputs:
       release_created: ${{ steps.release.outputs.release_created }}
-      tags: "${{ steps.release.outputs.major }}.${{steps.release.outputs.minor }}.${{ stps.release.outputs.patch }}"
+      tags: "${{ steps.release.outputs.major }}.${{steps.release.outputs.minor }}.${{ steps.release.outputs.patch }}"
     steps:
       - uses: google-github-actions/release-please-action@v3
         id: release
